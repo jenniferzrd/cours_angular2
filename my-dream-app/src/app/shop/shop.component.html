@@ -1,0 +1,16 @@
+<div>
+ <h1> SHOP </h1>
+<ul>
+	<li *ngFor="let item of items" [class.selected]="item === selectedItem">
+		{{ item.name }} : {{ item.price }} euros
+		<button (click) ="onSelect(item)"> Add </button>
+	</li>
+</ul>
+
+<!-- items.forEach( function (item) {
+	
+	this.html = item.price + item.name;
+
+}); -->
+
+</div>

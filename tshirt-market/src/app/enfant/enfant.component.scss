@@ -1,0 +1,22 @@
+.tshirt-size {
+	width: 250px;
+	height: 250px;
+}
+
+.anim {
+	display:none;
+}
+
+::ng-deep .mat-figure {
+align-items: initial;
+justify-content: initial;
+flex-direction: column;
+
+p {
+
+	font-weight: bold;
+	font-size: 18px;
+}
+}
+
+

@@ -1,0 +1,17 @@
+<p>
+  child works!
+</p>
+<h3>test :</h3>
+<div>
+<!-- C / 1 -->
+{{items[0].size}}
+</div>
+<h3>test boucle && filtre simple :</h3>
+<!-- C / 2 -->
+<div *ngFor="let item of items">
+  <!-- D / 1 && D / 2 -->
+  <div *ngIf="item.size == filterSize || !filterSize">
+    <!-- C / 2 -->
+    {{item.size}}  
+  </div>
+</div>

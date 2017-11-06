@@ -1,0 +1,9 @@
+<mat-grid-list cols="3" rowHeight="3:2">
+  <mat-grid-tile *ngFor="let item of items" [class.selected]="item === selectedItem" class="articles">
+      <img src="{{ item.img }}" alt="" class="box">
+      <br>
+      {{item.name}} : {{item.price}} euros
+    <snack-bar [productName]="item"></snack-bar>
+  </mat-grid-tile>
+
+</mat-grid-list>

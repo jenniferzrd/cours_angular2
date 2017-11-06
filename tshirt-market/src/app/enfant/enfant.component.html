@@ -1,0 +1,27 @@
+<p>
+  enfant works!
+</p>
+
+<mat-grid-list cols="3" rowHeight="3:2">
+  <mat-grid-tile *ngFor="let item of items">
+      <img src="{{ item.img }}" alt="tshirt" class="tshirt-size">
+      <br>
+      <p> {{item.name}} : {{item.price}} euros </p>
+  </mat-grid-tile>
+</mat-grid-list>
+
+<!-- <h1> Test de la boucle </h1>
+
+<div> test {{ items[0].size }}</div>
+
+<div *ngFor="let item of items"> 
+
+<div *ngIf="item.size == filterSize"> 
+
+test {{ items.size }}
+
+</div>
+
+</div> -->
+
+<!-- recup un item pour chaque items -->

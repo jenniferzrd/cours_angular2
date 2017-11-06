@@ -1,0 +1,6 @@
+<p>
+  grid works!
+</p>
+<div *ngFor="let character of characters">
+  <div (click)="addToFavorite(character)">{{character.name}}</div>
+</div>

@@ -1,0 +1,18 @@
+<p>
+  parent works!
+</p>
+
+<h3> Test variable de ma SelectSize</h3>
+<div> {{ selectedSize }} </div>
+<!-- Comme filter vaut selected je l'écris directement dans l'enfant de l'html parent via [filterSize] = "" -->
+<h3>Test input select défini SelectedSize </h3>
+<div>
+	
+	<select [(ngModel)]="selectedSize">
+		<option ngValue="s">s</option>
+		<option ngValue="m">m</option>
+		<option ngValue="l">l</option>
+	</select>
+</div>
+
+<app-child [filterSize]="selectedSize"></app-child>

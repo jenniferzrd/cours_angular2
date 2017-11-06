@@ -1,0 +1,16 @@
+
+<!-- recup un item pour chaque items -->
+
+<p>
+  child works!
+</p>
+<h3>test :</h3>
+<div>
+{{items[0].size}}
+</div>
+<h3>test boucle && filtre simple :</h3>
+<div *ngFor="let item of items">
+  <div *ngIf="item.size == filterSize || !filterSize">
+    {{item.size}}  
+  </div>
+</div>

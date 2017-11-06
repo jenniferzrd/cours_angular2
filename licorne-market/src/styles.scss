@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+// @import "~@angular/material/prebuilt-themes/indigo-pink.css"
+@import "~@angular/material/theming";
+@include mat-core();
+
+$main-theme-primary: mat-palette($mat-blue, 200);
+$main-theme-secondary: mat-palette($mat-pink, 100);
+$main-theme-accent: mat-palette($mat-orange);
+
+$main-theme: mat-light-theme($main-theme-primary, $main-theme-secondary, $main-theme-accent);
+@include angular-material-theme($main-theme);

@@ -1,0 +1,22 @@
+::ng-deep .mat-figure {
+align-items: initial;
+justify-content: initial;
+flex-direction: column;
+}
+
+.articles {
+    font-family: 'Amatic SC', cursive;
+    color:#3F51B5;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+}
+
+mat-grid-list {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}

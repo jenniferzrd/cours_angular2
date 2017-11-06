@@ -1,0 +1,22 @@
+<p>
+  parent works!
+</p>
+
+<h3>test variable selectedSize :</h3>
+<!-- E / 1 -->
+{{selectedSize}}
+
+<h3>test input select defini selectedSize :</h3>
+
+<!-- F / 1 et F / 2 : Je defini le menu de selection et je le lie grace a ngModel -->
+<select [(ngModel)]="selectedSize">
+  <option ngValue="">all</option>
+  <option ngValue="s">s</option>
+  <option ngValue="m">m</option>
+  <option ngValue="l">l</option>
+</select>
+
+<h1>app child</h1>
+
+<!-- E / 2 J'integre mon input dans le template parent -->
+<app-child [filterSize]="selectedSize"></app-child>

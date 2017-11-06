@@ -1,0 +1,24 @@
+<p>
+  grid works!
+</p>
+
+MES FAVORIS
+
+<div>
+  <div *ngFor="let favorite of favorites | slice:0:3">
+    {{ favorite.name }}
+  </div>
+</div>
+
+
+<div>
+  <div *ngFor="let character of characters">
+    <div>
+      <i (click)="favorite(character)" class="material-icons active inactive">favorite</i>
+    </div>
+    {{ character.name }}
+
+    <img src="{{ character.image }}" width="200px">
+
+  </div>
+</div>
