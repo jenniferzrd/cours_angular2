@@ -1,0 +1,15 @@
+<div>
+  <ul>
+    <li>{{ name }}</li>
+    <li>{{ description }}</li>
+    <li><img src="{{ picture }}" alt="" width="100px"></li>
+  </ul>
+</div>
+
+
+  <input type="text" [(ngModel)]="picture">
+  <input type="text" [(ngModel)]="name">
+  <input type="text" [(ngModel)]="description">
+  <button (click)="onSubmit()">OK</button>
+
+
