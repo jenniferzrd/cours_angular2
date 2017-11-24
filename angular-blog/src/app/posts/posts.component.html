@@ -1,0 +1,27 @@
+<div class="posts">
+<input type="text" [(ngModel)]="search" placeholder="Rechercher un article"> 
+<!-- <button>Trier mes articles par ordre croissant</button> -->
+<button (click)="order = !order">Trier mes articles par ordre croissant</button>
+
+<card *ngFor="let item of (items | filter: search | filterDate: order)">
+  <div card-header class="header">
+    <img src="{{ item.img }}" alt="photo_article">
+    <div class="texte_article">
+      <h3> {{ item.name }} </h3>
+      <p>{{ item.resume }}</p>
+      <br>
+      <h4 id="date">{{ item.date.toDateString() }}</h4>
+    </div>
+  </div>
+</card>
+</div>
+
+<!-- <div *ngFor="let item of (items | filterDate: order)"></div> -->
+<!-- Dans ma pipe je lui mets en value items, transform (items, order)
+return item sort (a, b) => { 
+  if (order) {
+    a>b
+  } else a < b 
+}  -->
+
+<!-- this.order = true; -->

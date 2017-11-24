@@ -1,0 +1,30 @@
+    .header {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .texte_article {
+        width: 500px;
+        padding: 20px;
+        border: 1px solid black;
+        margin-left: 10px;
+    }
+
+    img {
+        height: 215px;
+        width: 215px;
+        border: 1px solid black;
+    }
+
+    h3 {
+        font-family: 'Raleway', sans-serif;
+    }
+
+    input {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #date {
+        text-align: right;
+        color: grey;
+    }
